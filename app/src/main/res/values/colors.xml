@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#2f577e</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorText">#fff</color>
+    <color name="colorBG">#5c5c5c</color>
+    <color name="color_radio_button">#ffffff</color>
+
+    <color name="background">#65828e</color>
+    <color name="main_color">#ff9a00</color>
+    <color name="secondary_color">#BDBDBD</color>
+    <color name="color_backGround_dialog_chon">#32000000</color>
+    <color name="color_backGround_dialog_kchon">#14000000</color>
+</resources>

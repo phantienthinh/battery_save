@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+      >
+        <TextView
+            android:id="@+id/tv_title_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/cai_dat"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_15sdp" />
+        <ImageView
+            android:id="@+id/iv_setting_back"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/button_back" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+
+
+            <TextView
+                android:id="@+id/tv_thongbao"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+                android:text="@string/thong_bao"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ToggleButton
+                android:id="@+id/Tg_notification"
+                android:layout_centerInParent="true"
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/custom_toggle_button"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+                android:text="@string/thong_bao"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBG">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+            <TextView
+                android:id="@+id/tv_toi_uu_hoa"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+                android:text="@string/loi_tat_toi_uu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ToggleButton
+                android:id="@+id/Tg_create_toi_uu"
+                android:layout_centerInParent="true"
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/custom_toggle_button"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+                android:text="Thông báo"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:background="@color/colorBG"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+            <TextView
+                android:id="@+id/tv_tiet_kiem_pin"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+                android:text="@string/loi_tat_tiet_kiem_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ToggleButton
+                android:id="@+id/Tg_create_bt"
+                android:layout_centerInParent="true"
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/custom_toggle_button"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:background="@color/colorBG"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+            <TextView
+                android:id="@+id/tv_pin_yeu"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+                android:text="@string/canh_bao_pin_yeu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ToggleButton
+                android:id="@+id/Tg_danger"
+                android:layout_centerInParent="true"
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/custom_toggle_button"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="@color/colorText"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:background="@color/colorBG"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+
+            <TextView
+                android:id="@+id/tv_chia_se"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:gravity="left|center"
+                android:text="@string/chia_se"
+                android:textColor="@color/colorText" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:background="@color/colorBG"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+            <TextView
+                android:id="@+id/tv_danh_gia"
+                android:gravity="left|center"
+                android:textColor="@color/colorText"
+                android:text="@string/danh_gia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:background="@color/colorBG"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

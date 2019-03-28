@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".activitys.CheDoActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_Title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <ImageView
+            android:id="@+id/iv_chedo_back"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/button_back" />
+
+        <TextView
+            android:id="@+id/title_cheDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/che_do_tiet_kiem_pin"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_above="@id/adView"
+        android:layout_below="@id/layout_Title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <LinearLayout
+            android:id="@+id/ll_toi_uu_che_do"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/custom_layout"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:src="@drawable/icon_sieutoiuu" />
+
+                    <TextView
+                        android:id="@+id/sieuToiUu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/sieu_toi_uu_nomal"
+                        android:textColor="@color/colorText" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:checked="false"
+                    android:id="@+id/rd_sieu_toi_uu"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="@color/color_radio_button" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_50sdp">
+
+                <TextView
+                    android:id="@+id/sieuToiUu_note"
+                    android:layout_width="@dimen/_142sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:lines="2"
+                    android:text="@string/text_sieutoiuu"
+                    android:textColor="#96ffffff"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/ll_toi_uu_che_do"
+            android:id="@+id/ll_chung_che_do"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/custom_layout"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:src="@drawable/icon_chung" />
+
+                    <TextView
+                        android:id="@+id/Chung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/chung_nomal"
+                        android:textColor="@color/colorText" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/rd_chung"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="@color/color_radio_button" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_40sdp">
+
+                <TextView
+                    android:id="@+id/Chung_Note"
+                    android:layout_width="@dimen/_172sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:lines="2"
+                    android:text="@string/text_chung"
+                    android:textColor="#96ffffff"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Time_sleep_che_do"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_below="@id/ll_chung_che_do"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/custom_layout"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:src="@drawable/icon_thoigianngu" />
+
+                    <TextView
+                        android:id="@+id/TimeSleep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/thoi_gian_ngu_nomal"
+                        android:textColor="@color/colorText" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/rd_time_sleep"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="@color/color_radio_button" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_50sdp">
+
+                <TextView
+                    android:id="@+id/TimeSleep_note"
+                    android:layout_width="157dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:lines="2"
+                    android:text="@string/text_time_sleep"
+                    android:textColor="#96ffffff"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/ll_Time_sleep_che_do"
+            android:id="@+id/ll_tuy_chinh_che_do"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/custom_layout"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:src="@drawable/icon_tuychinh" />
+
+                    <TextView
+                        android:id="@+id/Custom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/tuy_chinh_nomal"
+                        android:textColor="@color/colorText" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/rd_tuy_chinh"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="@color/color_radio_button" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_50sdp">
+
+                <TextView
+                    android:id="@+id/Custom_Note"
+                    android:layout_width="@dimen/_172sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:lines="2"
+                    android:text="@string/text_tuy_chinh"
+                    android:textColor="#96ffffff"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            android:visibility="gone"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>

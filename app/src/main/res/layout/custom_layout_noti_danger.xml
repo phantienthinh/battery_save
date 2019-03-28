@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@drawable/bg_noti"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/icon_noti"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:id="@+id/tvTime_noti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity=""
+                        android:text="@string/canh_bao"
+                        android:textColor="@color/colorText" />
+
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:padding="3dp"
+                        android:src="@drawable/icon_warning"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:id="@+id/tv_nhietDo_noti"
+                        android:textColor="@color/colorText"
+                        android:layout_gravity="center"
+                        android:text="@string/pin_yeu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:textColor="@color/colorText"
+            android:layout_marginRight="20sp"
+            android:textSize="11sp"
+            android:id="@+id/btn_noti_danger"
+            android:text="@string/che_do_tiet_kiem_pin"
+            android:background="@drawable/custom_button_noti"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="140dp"
+            android:layout_height="30dp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

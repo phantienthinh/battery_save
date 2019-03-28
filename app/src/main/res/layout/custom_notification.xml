@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:padding="5dp"
+    android:background="@drawable/bg_noti"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/icon_noti"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/tvTime_noti"
+                    android:textColor="@color/colorText"
+                    android:layout_gravity="center"
+                    android:gravity=""
+                    android:text="Giờ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:id="@+id/tv_nhietDo_noti"
+                    android:textColor="@color/colorText"
+                    android:layout_gravity="center"
+                    android:text="nhiệt độ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginRight="20sp"
+        android:textSize="12sp"
+        android:id="@+id/btn_noti"
+        android:text="@string/toi_uu_hoa"
+        android:background="@drawable/bt_noti"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="80dp"
+        android:layout_height="30dp" />
+
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/img_1"
+            android:src="@drawable/ani_one"
+            android:layout_width="300dp"
+            android:layout_height="300dp" />
+        <ImageView
+            android:id="@+id/img_2"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ani_two"
+            android:layout_width="180dp"
+            android:layout_height="180dp" />
+        <ImageView
+            android:id="@+id/img_3"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ani_three"
+            android:layout_width="195dp"
+            android:layout_height="195dp" />
+        <ImageView
+            android:id="@+id/img_4"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ani_four"
+            android:layout_width="145dp"
+            android:layout_height="145dp" />
+        <ImageView
+            android:id="@+id/img_5"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ani_five"
+            android:layout_width="145dp"
+            android:layout_height="145dp" />
+        <ImageView
+            android:id="@+id/img_6"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ani_six"
+            android:layout_width="75dp"
+            android:layout_height="75dp" />
+        <ImageView
+            android:id="@+id/img_7"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ani_seven"
+            android:layout_width="75dp"
+            android:layout_height="75dp" />
+        <ImageView
+            android:id="@+id/img_8"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ani_eight"
+            android:layout_width="55dp"
+            android:layout_height="55dp" />
+        <ImageView
+            android:id="@+id/img_9"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ani_night"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

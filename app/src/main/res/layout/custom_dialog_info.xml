@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_340sdp"
+        android:background="@drawable/dialog_thongtin"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/title_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:text="@string/battery_save"
+            android:textColor="@color/colorText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorText">
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/app_icon" />
+
+        <TextView
+            android:id="@+id/author_dialog"
+            android:textColor="#d4d3d3"
+            android:gravity="center"
+            android:text="@string/author"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/hdp_dialog"
+            android:gravity="center"
+            android:text="@string/hdp_solutions"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp" />
+        <TextView
+            android:id="@+id/pricacy_dialog"
+            android:textColor="#d4d3d3"
+            android:gravity="center"
+            android:text="@string/pricacy_polycy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp" />
+        <TextView
+            android:id="@+id/link_dialog"
+            android:textColor="@color/colorText"
+            android:gravity="center"
+            android:text="@string/link_bao_mat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp" />
+        <TextView
+            android:id="@+id/emali_dialog"
+            android:textColor="#d4d3d3"
+            android:gravity="center|bottom"
+            android:text="Email:"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp" />
+        <TextView
+            android:id="@+id/mail_link_dialog"
+            android:textColor="@color/colorText"
+            android:gravity="center"
+            android:text="@string/support_hdpsolutions_com"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp" />
+
+        <Button
+            android:id="@+id/btn_dialog_ok"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/ok"
+            android:background="@drawable/button_ok"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_25sdp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

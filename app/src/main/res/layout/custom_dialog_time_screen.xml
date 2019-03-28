@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:padding="@dimen/_20sdp"
+        android:background="@drawable/dialog_time"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_200sdp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/second_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/fifteenSecond"
+                android:textColor="@color/colorText" />
+            <TextView
+                android:id="@+id/second_30"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:textColor="@color/colorText"
+                android:text="@string/Thirty_Second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/minute_1"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:textColor="@color/colorText"
+                android:text="@string/one_minute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/minute_15"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:textColor="@color/colorText"
+                android:text="@string/fifteen_minute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/minute_30"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:textColor="@color/colorText"
+                android:text="@string/thirty_minute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:id="@+id/rd_group"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp">
+                <RadioButton
+                    android:id="@+id/rad_15s"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:buttonTint="@color/color_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rad_30s"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:buttonTint="@color/color_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rad_1p"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:buttonTint="@color/color_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rad_15p"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:buttonTint="@color/color_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rad_30p"
+                    android:buttonTint="@color/color_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
